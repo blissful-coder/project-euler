@@ -34,13 +34,22 @@ int sumOfDigitFactorial(int n)
 
 int main()
 {
-    // int num;
-    // for(int i=1; i<=9; i++){
-    //     cout << fact(i)<<"\n";
-    // }
+/*
+9! = 362880
 
-    // cout<<sumOfDigitFactorial(23)<<endl;
-    // cout<<sumOfDigitFactorial(10)<<endl;
+Even if all digits are 9
+sumOfDigitFactorial(9) = 362880
+sumOfDigitFactorial(99999999)=2903040 is lot less than the number 99999999
+*/
+    cout << "fact(9): "<< fact(9) <<"\n";
+    cout << "sumOfDigitFactorial(9): "<< sumOfDigitFactorial(9) <<"\n";
+    cout << "sumOfDigitFactorial(99): "<< sumOfDigitFactorial(99) <<"\n";
+    cout << "sumOfDigitFactorial(999): "<< sumOfDigitFactorial(999) <<"\n";
+    cout << "sumOfDigitFactorial(9999): "<< sumOfDigitFactorial(9999) <<"\n";
+    cout << "sumOfDigitFactorial(99999): "<< sumOfDigitFactorial(99999) <<"\n";
+    cout << "sumOfDigitFactorial(999999): "<< sumOfDigitFactorial(999999) <<"\n";
+    cout << "sumOfDigitFactorial(9999999): "<< sumOfDigitFactorial(9999999) <<"\n";
+    cout << "sumOfDigitFactorial(99999999): "<< sumOfDigitFactorial(99999999) <<"\n";
     int compare = 0;
     int sum=0;
     for (int i = 1; i <= 9999999; i++)
